@@ -41,7 +41,11 @@ If you encounter any bugs or have suggestions, please open an issue on our [GitH
 
 ## Credits
 
-Special thanks to the developers of all of the mods from TerraFirmaGreg for their fantastic mods.
+- Produced by Arya the Elf
+- Updated and made recipes automatable by JoaquinDG
+- Help with various textures by Derpesore
+- Refactor and update by JL2210
+- Special thanks to the developers of all of the mods from TerraFirmaGreg for their fantastic mods.
 
 ---
 
