@@ -32,8 +32,10 @@ StartupEvents.registry('block', (e) => {
     .tagBoth('tfc:wild_crops')
     .tagBlock('minecraft:mineable/hoe')
     .tagBlock('tfc:can_be_snow_piled')
+    .deadModel('fff:block/cucumber_wild_young')
 
   const cropMustard = e.create("fff:mustard", "tfc:crop") // initialize the mustard plant
+    .stages(7)
     .mapColor('plant')
     .hardness(0.4)
     .soundType('crop')
@@ -53,8 +55,10 @@ StartupEvents.registry('block', (e) => {
     .tagBoth('tfc:wild_crops')
     .tagBlock('minecraft:mineable/hoe')
     .tagBlock('tfc:can_be_snow_piled')
+    .deadModel('fff:block/mustard_wild_young')
 
   const cropCassava = e.create("fff:cassava", "tfc:crop") // initialize the cassava plant
+    .stages(7)
     .mapColor('plant')
     .hardness(0.4)
     .soundType('crop')
@@ -83,4 +87,5 @@ StartupEvents.registry('block', (e) => {
     .tagBoth('tfc:wild_crops')
     .tagBlock('minecraft:mineable/hoe')
     .tagBlock('tfc:can_be_snow_piled')
+    .deadModel('fff:block/cassava_wild_young')
 });
