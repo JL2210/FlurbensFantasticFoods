@@ -1,6 +1,4 @@
-// priority: 99
-
-Platform.setModName("fff", "Flurben's Fantastic Foods");
+Platform.mods.setModName("fff", "Flurben's Fantastic Foods")
 
 StartupEvents.registry("mob_effect", (event) => {
   event
