@@ -1,4 +1,4 @@
-Platform.mods.setName("fff", "Flurben's Fantastic Foods")
+Platform.getInfo("fff").name = "Flurben's Fantastic Foods"
 
 StartupEvents.registry("mob_effect", (event) => {
   event

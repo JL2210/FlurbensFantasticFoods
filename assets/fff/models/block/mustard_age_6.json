@@ -1,4 +1,5 @@
 {
+  "parent": "block/crop",
   "textures": {
     "crop": "fff:block/mustard_6"
   }

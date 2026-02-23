@@ -1,4 +1,5 @@
 {
+  "parent": "tfc:block/wild_crop/crop",
   "textures": {
     "crop": "fff:block/mustard_3"
   }
