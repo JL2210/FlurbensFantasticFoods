@@ -1,6 +1,6 @@
 StartupEvents.registry('block', (e) => {
 
-  const cropCucumber = e.create("fff:cucumber", "tfc:crop") // initialize the cucumber plant
+  const cropCucumber = e.create("fff:crop/cucumber", "tfc:crop") // initialize the cucumber plant
     .stages(7)
     .mapColor('plant')
     .hardness(0.4)
@@ -24,7 +24,7 @@ StartupEvents.registry('block', (e) => {
         dead.tagBlock('minecraft:mineable/hoe')
     })
 
-  e.create('fff:cucumber_wild', 'tfc:wild_crop')
+  e.create('fff:crop/cucumber_wild', 'tfc:wild_crop')
     .soundType('crop')
     .seeds('fff:cucumber_seeds')
     .food('fff:cucumber_product')
@@ -34,7 +34,7 @@ StartupEvents.registry('block', (e) => {
     .tagBlock('tfc:can_be_snow_piled')
     .deadModel('fff:block/cucumber_wild_young')
 
-  const cropMustard = e.create("fff:mustard", "tfc:crop") // initialize the mustard plant
+  const cropMustard = e.create("fff:crop/mustard", "tfc:crop") // initialize the mustard plant
     .stages(7)
     .mapColor('plant')
     .hardness(0.4)
@@ -47,7 +47,7 @@ StartupEvents.registry('block', (e) => {
         dead.tagBlock('minecraft:mineable/hoe')
     })
 
-  e.create('fff:mustard_wild', 'tfc:wild_crop')
+  e.create('fff:crop/mustard_wild', 'tfc:wild_crop')
     .soundType('crop')
     .seeds('fff:mustard_seeds')
     .food('fff:mustard_product')
@@ -57,7 +57,7 @@ StartupEvents.registry('block', (e) => {
     .tagBlock('tfc:can_be_snow_piled')
     .deadModel('fff:block/mustard_wild_young')
 
-  const cropCassava = e.create("fff:cassava", "tfc:crop") // initialize the cassava plant
+  const cropCassava = e.create("fff:crop/cassava", "tfc:crop") // initialize the cassava plant
     .stages(7)
     .mapColor('plant')
     .hardness(0.4)
@@ -79,7 +79,7 @@ StartupEvents.registry('block', (e) => {
         dead.tagBlock('minecraft:mineable/hoe')
     })
 
-  e.create('fff:cassava_wild', 'tfc:wild_crop')
+  e.create('fff:crop/cassava_wild', 'tfc:wild_crop')
     .soundType('crop')
     .seeds('fff:cassava_seeds')
     .food('fff:cassava_product')

@@ -1,46 +1,46 @@
 TFCEvents.data(event => {
-    event.foodItem('fff:raw_hot_dog', food => {
+    event.foodItem('fff:food/raw_hot_dog', food => {
         food.hunger(2)
         food.protein(1)
         food.decayModifier(2)
     })
 
-    event.foodItem('fff:cooked_hot_dog', food => {
+    event.foodItem('fff:food/cooked_hot_dog', food => {
         food.hunger(3)
         food.saturation(2)
         food.protein(2)
         food.decayModifier(1.5)
     })
 
-    event.foodItem('fff:raw_hot_dog_bun', food => {
+    event.foodItem('fff:food/raw_hot_dog_bun', food => {
         food.hunger(1)
         food.saturation(0.5)
         food.grain(1)
         food.decayModifier(1.4)
     })
 
-    event.foodItem('fff:uncut_hot_dog_bun', food => {
+    event.foodItem('fff:food/uncut_hot_dog_bun', food => {
         food.hunger(1.5)
         food.saturation(0.7)
         food.grain(1)
         food.decayModifier(0.8)
     })
 
-    event.foodItem('fff:cut_hot_dog_bun', food => {
+    event.foodItem('fff:food/cut_hot_dog_bun', food => {
         food.hunger(1.5)
         food.saturation(0.7)
         food.grain(1)
         food.decayModifier(0.8)
     })
 
-    event.foodItem('fff:chopped_onion', food => {
+    event.foodItem('fff:food/chopped_onion', food => {
         food.hunger(2)
         food.saturation(0.5)
         food.vegetables(1)
         food.decayModifier(0.6)
     })
 
-    event.foodItem('fff:cucumber_product', food => {
+    event.foodItem('fff:food/cucumber_product', food => {
         food.hunger(2)
         food.saturation(0.8)
         food.vegetables(1)
@@ -48,7 +48,7 @@ TFCEvents.data(event => {
         food.water(6)
     })
 
-    event.foodItem('fff:pickle', food => {
+    event.foodItem('fff:food/pickle', food => {
         food.hunger(2)
         food.saturation(0.8)
         food.vegetables(1)
@@ -56,7 +56,7 @@ TFCEvents.data(event => {
         food.water(10)
     })
 
-    event.foodItem('fff:pickle_spear', food => {
+    event.foodItem('fff:food/pickle_spear', food => {
         food.hunger(0.5)
         food.saturation(0.4)
         food.vegetables(0.25)
@@ -64,7 +64,7 @@ TFCEvents.data(event => {
         food.water(2.5)
     })
 
-    event.foodItem('fff:sweet_relish', food => {
+    event.foodItem('fff:food/sweet_relish', food => {
         food.hunger(1)
         food.saturation(0.8)
         food.vegetables(0.4)
@@ -72,7 +72,7 @@ TFCEvents.data(event => {
         food.water(2.5)
     })
 
-    event.foodItem('fff:tomato_wedge', food => {
+    event.foodItem('fff:food/tomato_wedge', food => {
         food.hunger(1)
         food.saturation(0.5)
         food.vegetables(0.5)
@@ -80,7 +80,7 @@ TFCEvents.data(event => {
         food.water(2.5)
     })
 
-    event.foodItem('fff:flurbens_tasty_glizzy', food => {
+    event.foodItem('fff:food/flurbens_tasty_glizzy', food => {
         food.hunger(10)
         food.saturation(6)
         food.protein(2.5)
@@ -90,7 +90,7 @@ TFCEvents.data(event => {
         food.decayModifier(0.8)
     })
 
-    event.foodItem('fff:raspberry_boba', food => {
+    event.foodItem('fff:food/raspberry_boba', food => {
         food.hunger(3)
         food.saturation(6)
         food.fruit(2.5)
@@ -99,7 +99,7 @@ TFCEvents.data(event => {
         food.decayModifier(0.8)
     })
 
-    event.foodItem('fff:taro_boba', food => {
+    event.foodItem('fff:food/taro_boba', food => {
         food.hunger(3)
         food.saturation(6)
         food.fruit(2.5)

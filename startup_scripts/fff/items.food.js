@@ -5,7 +5,7 @@
 StartupEvents.registry("item", e => {
 
   const rawHotDog = e
-    .create("fff:raw_hot_dog")
+    .create("fff:food/raw_hot_dog")
     .tag("tfc:foods")
     .tag("firmalife:foods/heatable")
     .food((food) => {
@@ -17,7 +17,8 @@ StartupEvents.registry("item", e => {
     });
 
   const cookedHotDog = e
-    .create("fff:cooked_hot_dog")
+    .create("fff:food/cooked_hot_dog")
+    .tag("tfc:foods")
     .food((food) => {
       food.hunger(4); // Amount of hunger restored
       food.saturation(4); // Saturation restored
@@ -58,7 +59,7 @@ StartupEvents.registry("item", e => {
     .tag("tfc:any_knapping");
 
   const raspberryBoba = e
-    .create("fff:raspberry_boba")
+    .create("fff:food/raspberry_boba")
     .tag("tfc:foods")
     .tooltip(Text.translatable("fff.tooltip.food.raspberry_boba"))
     .useAnimation("drink")
@@ -84,7 +85,7 @@ StartupEvents.registry("item", e => {
     });
 
   const taroBoba = e
-    .create("fff:taro_boba")
+    .create("fff:food/taro_boba")
     .tag("tfc:foods")
     .tooltip(Text.translatable("fff.tooltip.food.taro_boba"))
     .useAnimation("drink")
@@ -110,7 +111,7 @@ StartupEvents.registry("item", e => {
     });
 
   const rawHotDogBun = e
-    .create("fff:raw_hot_dog_bun")
+    .create("fff:food/raw_hot_dog_bun")
     .tag("tfc:foods")
     .tag("tfc:foods/dough")
     .tag("firmalife:foods/extra_dough")
@@ -123,7 +124,7 @@ StartupEvents.registry("item", e => {
     });
 
   const hotDogBun = e
-    .create("fff:uncut_hot_dog_bun")
+    .create("fff:food/uncut_hot_dog_bun")
     .tag("tfc:foods")
     .food((food) => {
       food.hunger(2); // Amount of hunger restored
@@ -134,7 +135,7 @@ StartupEvents.registry("item", e => {
     });
 
   const cutHotDogBun = e
-    .create("fff:cut_hot_dog_bun")
+    .create("fff:food/cut_hot_dog_bun")
     .tag("tfc:foods")
     .food((food) => {
       food.hunger(2); // Amount of hunger restored
@@ -145,7 +146,7 @@ StartupEvents.registry("item", e => {
     });
 
   const choppedOnion = e
-    .create("fff:chopped_onion")
+    .create("fff:food/chopped_onion")
     .tag("tfc:foods")
     .food((food) => {
       food.hunger(3); // Amount of hunger restored
@@ -156,7 +157,7 @@ StartupEvents.registry("item", e => {
     });
 
   const pickle = e
-    .create("fff:pickle")
+    .create("fff:food/pickle")
     .tag("tfc:foods")
     .food((food) => {
       food.hunger(2); // Amount of hunger restored
@@ -167,8 +168,9 @@ StartupEvents.registry("item", e => {
     });
 
   const pickleSpear = e
-    .create("fff:pickle_spear")
+    .create("fff:food/pickle_spear")
     .tag("tfc:foods")
+    .tag("tfc:foods/usable_in_sandwich")
     .food((food) => {
       food.hunger(1); // Amount of hunger restored
       food.saturation(1); // Saturation restored
@@ -178,7 +180,7 @@ StartupEvents.registry("item", e => {
     });
 
   const sweetRelish = e
-    .create("fff:sweet_relish")
+    .create("fff:food/sweet_relish")
     .tag("tfc:foods")
     .food((food) => {
       food.hunger(2); // Amount of hunger restored
@@ -189,8 +191,10 @@ StartupEvents.registry("item", e => {
     });
 
   const tomatoWedge = e
-    .create("fff:tomato_wedge")
+    .create("fff:food/tomato_wedge")
     .tag("tfc:foods")
+    .tag("tfc:foods/vegetables")
+    .tag("tfc:foods/usable_in_sandwich")
     .food((food) => {
       food.hunger(3); // Amount of hunger restored
       food.saturation(2); // Saturation restored
@@ -200,7 +204,7 @@ StartupEvents.registry("item", e => {
     });
 
   const flurbensTastyGlizzy = e
-    .create("fff:flurbens_tasty_glizzy")
+    .create("fff:food/tasty_glizzy")
     .tag("tfc:foods")
     .food((food) => {
       food.hunger(8); // Amount of hunger restored
@@ -209,6 +213,6 @@ StartupEvents.registry("item", e => {
       food.fastToEat(false); // Whether it's fast to eat like dried kelp
       food.alwaysEdible(false); // Whether it can be eaten when the player is not hungry
     })
-    .tooltip(Text.translatable("fff.tooltip.food.flurbens_tasty_glizzy"));
+    .tooltip(Text.translatable("fff.tooltip.food.tasty_glizzy"));
 
 });

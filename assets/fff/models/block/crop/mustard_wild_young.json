@@ -1,0 +1,6 @@
+{
+  "parent": "tfc:block/wild_crop/crop",
+  "textures": {
+    "crop": "fff:block/crop/mustard_age_3"
+  }
+}
